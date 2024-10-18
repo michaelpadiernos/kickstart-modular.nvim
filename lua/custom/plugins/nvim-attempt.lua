@@ -1,6 +1,6 @@
 return {
     'm-demare/attempt.nvim', -- No need to specify plenary as dependency
-    enabled = true,
+    enabled = false,
     dependencies = {
         'nvim-telescope/telescope.nvim',
         'nvim-telescope/telescope-ui-select.nvim'
