@@ -1,5 +1,6 @@
 return {
     "nvim-tree/nvim-tree.lua",
+    enabled = true,
     version = "*",
     lazy = false,
     dependencies = {
@@ -8,19 +9,19 @@ return {
         'b0o/nvim-tree-preview.lua',
         '3rd/image.nvim',
     },
-    cmd = 'NvimTreeToggle',
-    keys = {
-        { '\\', ':NvimTreeToggle<CR>', desc = 'Toggle NvimTree', silent = true },
-    },
-    opts = {
-        filesystem = {
-            window = {
-                mappings = {
-                    ['\\'] = 'NvimTreeToggle',
-                },
-            },
-        },
-    },
+    -- cmd = 'NvimTreeToggle',
+    -- keys = {
+    --     { '\\', ':NvimTreeToggle<CR>', desc = 'Toggle NvimTree', silent = true },
+    -- },
+    -- opts = {
+    --     filesystem = {
+    --         window = {
+    --             mappings = {
+    --                 ['\\'] = 'NvimTreeToggle',
+    --             },
+    --         },
+    --     },
+    -- },
     config = function()
 
         local swap_then_open_tab = function()
@@ -42,6 +43,7 @@ return {
 
         require("nvim-tree").setup({
             on_attach = "default",
+            -- auto_close = true,
             hijack_cursor = false,
             auto_reload_on_write = true,
             disable_netrw = true,
@@ -49,9 +51,9 @@ return {
             hijack_unnamed_buffer_when_opening = false,
             root_dirs = {},
             prefer_startup_root = false,
-            sync_root_with_cwd = false,
+            sync_root_with_cwd = true,
             reload_on_bufenter = false,
-            respect_buf_cwd = false,
+            respect_buf_cwd = true,
             select_prompts = false,
             sort = {
                 sorter = "name",
@@ -169,9 +171,9 @@ return {
                 auto_open = true,
             },
             update_focused_file = {
-                enable = false,
+                enable = true,
                 update_root = {
-                    enable = false,
+                    enable = true,
                     ignore_list = {},
                 },
                 exclude = false,

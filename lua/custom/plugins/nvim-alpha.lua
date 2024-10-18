@@ -1,5 +1,6 @@
   return {
         "goolord/alpha-nvim",
+        enabled = true,
         -- dependencies = { 'echasnovski/mini.icons' },
         dependencies = { 'nvim-tree/nvim-web-devicons' },
         config = function()
