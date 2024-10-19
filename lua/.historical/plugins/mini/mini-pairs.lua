@@ -1,3 +1,1 @@
-later(function()
-    require("mini.pairs").setup()
-end)
+return { 'mini.operators', version = false, enabled = true }

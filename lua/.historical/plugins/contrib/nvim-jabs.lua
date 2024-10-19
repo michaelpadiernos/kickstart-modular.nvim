@@ -1,6 +1,6 @@
 return {
     'matbme/JABS.nvim',
-    enabled = false,
+    enabled = true,
     config = function()
         require('jabs').setup {
             --config

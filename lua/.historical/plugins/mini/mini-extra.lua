@@ -1,3 +1,1 @@
-later(function()
-    require("mini.extra").setup()
-end)
+return { 'mini.doc', version = false, enabled = true }

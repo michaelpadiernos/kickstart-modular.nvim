@@ -9,6 +9,7 @@ require('lazy').setup({
 
     { import = 'plugins.mini' },
     { import = 'plugins.contrib' },
+--     { import = 'plugins.vim' },
 
 --     { import = 'sources' },
 })
