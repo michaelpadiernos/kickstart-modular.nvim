@@ -1,52 +1,14 @@
-require('bootstrap')
+require 'bootstrap'
+require 'options'
+-- require 'keymaps'
 
-require("mini.deps").setup({ path = { package = path_package } })
+require('lazy').setup({
+    'tpope/vim-sleuth',
 
-local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
+    { import = 'themes' },
 
-now(function()
-    require('options')
-end)
+    { import = 'plugins.mini' },
+    { import = 'plugins.contrib' },
 
-add('echasnovski/mini.ai')
-add('echasnovski/mini.align')
-add('echasnovski/mini.animate')
-add('echasnovski/mini.base16')
-add('echasnovski/mini.basics')
-add('echasnovski/mini.bracketed')
-add('echasnovski/mini.bufremove')
-add('echasnovski/mini.clue')
-add('echasnovski/mini.colors')
-add('echasnovski/mini.comment')
-add('echasnovski/mini.completion')
-add('echasnovski/mini.cursorword')
-add('echasnovski/mini.diff')
-add('echasnovski/mini.doc')
-add('echasnovski/mini.extra')
-add('echasnovski/mini.files')
-add('echasnovski/mini.fuzzy')
-add('echasnovski/mini-git')
-add('echasnovski/mini.hipatterns')
-add('echasnovski/mini.hues')
-add('echasnovski/mini.icons')
-add('echasnovski/mini.indentscope')
-add('echasnovski/mini.jump')
-add('echasnovski/mini.jump2d')
-add('echasnovski/mini.map')
-add('echasnovski/mini.misc')
-add('echasnovski/mini.move')
-add('echasnovski/mini.notify')
-add('echasnovski/mini.operators')
-add('echasnovski/mini.pairs')
-add('echasnovski/mini.pick')
-add('echasnovski/mini.sessions')
-add('echasnovski/mini.splitjoin')
-add('echasnovski/mini.starter')
-add('echasnovski/mini.statusline')
-add('echasnovski/mini.surround')
-add('echasnovski/mini.tabline')
-add('echasnovski/mini.test')
-add('echasnovski/mini.trailspace')
-add('echasnovski/mini.visits')
-
--- { import = 'plugins.contrib' }
+--     { import = 'sources' },
+})
