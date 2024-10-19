@@ -1,1 +1,1 @@
-return { 'mini.clue', version = false, enabled = false }
+return { 'echasnovski/mini.clue', version = false, enabled = false }

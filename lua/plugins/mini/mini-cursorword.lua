@@ -1,1 +1,1 @@
-return { 'mini.cursorword', version = false, enabled = true }
+return { 'echasnovski/mini.cursorword', version = false, enabled = true }

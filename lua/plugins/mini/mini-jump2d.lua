@@ -1,1 +1,1 @@
-return { 'mini.jump2d', version = false, enabled = true }
+return { 'echasnovski/mini.jump2d', version = false, enabled = true }

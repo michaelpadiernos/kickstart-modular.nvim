@@ -1,1 +1,1 @@
-return { 'mini.diff', version = false, enabled = true }
+return { 'echasnovski/mini.diff', version = false, enabled = true }

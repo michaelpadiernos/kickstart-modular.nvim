@@ -1,1 +1,1 @@
-return { 'mini.jump', version = false, enabled = true }
+return { 'echasnovski/mini.jump', version = false, enabled = true }

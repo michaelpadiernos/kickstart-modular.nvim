@@ -1,1 +1,1 @@
-return { 'mini.fuzzy', version = false, enabled = true }
+return { 'echasnovski/mini.fuzzy', version = false, enabled = true }

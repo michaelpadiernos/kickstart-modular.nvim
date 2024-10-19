@@ -1,1 +1,1 @@
-return { 'mini.git', version = false, enabled = false }
+return { 'echasnovski/mini.git', version = false, enabled = false }

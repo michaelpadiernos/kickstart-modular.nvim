@@ -1,1 +1,1 @@
-return { 'mini.icons', version = false, enabled = false }
+return { 'echasnovski/mini.icons', version = false, enabled = false }

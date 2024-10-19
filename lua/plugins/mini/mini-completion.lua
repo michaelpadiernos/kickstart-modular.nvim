@@ -1,1 +1,1 @@
-return { 'mini.completion', version = false, enabled = true }
+return { 'echasnovski/mini.completion', version = false, enabled = true }

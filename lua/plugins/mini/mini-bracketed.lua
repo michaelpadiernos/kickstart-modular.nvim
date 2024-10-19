@@ -1,1 +1,1 @@
-return { 'mini.bracketed', version = false, enabled = true }
+return { 'echasnovski/mini.bracketed', version = false, enabled = true }

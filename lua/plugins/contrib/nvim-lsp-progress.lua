@@ -1,7 +1,7 @@
 return {
     'linrongbin16/lsp-progress.nvim',
     enabled = true,
-    config = funtion()
+    config = function()
         require('lsp-progress').setup()
     end,
 }

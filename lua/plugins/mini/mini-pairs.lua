@@ -1,1 +1,1 @@
-return { 'mini.operators', version = false, enabled = true }
+return { 'echasnovski/mini.operators', version = false, enabled = true }

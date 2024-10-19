@@ -1,1 +1,1 @@
-return { 'mini.base16', version = false, enabled = false }
+return { 'echasnovski/mini.base16', version = false, enabled = false }

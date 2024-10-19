@@ -1,1 +1,1 @@
-return { 'mini.hipatterns', version = false, enabled = true }
+return { 'echasnovski/mini.hipatterns', version = false, enabled = true }

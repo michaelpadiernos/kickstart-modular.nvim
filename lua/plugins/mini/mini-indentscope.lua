@@ -1,1 +1,1 @@
-return { 'mini.indentscope', version = false, enabled = true }
+return { 'echasnovski/mini.indentscope', version = false, enabled = true }

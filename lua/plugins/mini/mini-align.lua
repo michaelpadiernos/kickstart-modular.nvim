@@ -1,1 +1,1 @@
-return { 'mini.align', version = false, enabled = true }
+return { 'echasnovski/mini.align', version = false, enabled = true }

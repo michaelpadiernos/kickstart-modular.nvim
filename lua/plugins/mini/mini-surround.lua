@@ -1,1 +1,1 @@
-return { 'mini.surround', version = false, enabled = true }
+return { 'echasnovski/mini.surround', version = false, enabled = true }

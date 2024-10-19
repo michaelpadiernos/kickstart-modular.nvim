@@ -1,1 +1,1 @@
-return { 'mini.doc', version = false, enabled = true }
+return { 'echasnovski/mini.extra', version = false, enabled = true }

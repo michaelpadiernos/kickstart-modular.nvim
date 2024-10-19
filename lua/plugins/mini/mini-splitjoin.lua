@@ -1,1 +1,1 @@
-return { 'mini.splitjoin', version = false, enabled = false }
+return { 'echasnovski/mini.splitjoin', version = false, enabled = false }

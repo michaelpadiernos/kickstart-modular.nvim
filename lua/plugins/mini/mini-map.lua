@@ -1,1 +1,1 @@
-return { 'mini.map', version = false, enabled = false }
+return { 'echasnovski/mini.map', version = false, enabled = false }
