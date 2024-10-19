@@ -5,7 +5,7 @@ return {
     config = function()
         vim.cmd("colorscheme onedark_dark")
 
---         vim.api.nvim_set_hl(0, 'FloatBorder', { fg = '#000000' })
+        vim.api.nvim_set_hl(0, 'NeominimapBorder', { fg = '#000000' })
         vim.api.nvim_set_hl(0, 'WinSeparator', { fg = '#000000', bg = '#000000' })
 
         require("onedarkpro").setup({
