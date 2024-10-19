@@ -1,6 +1,6 @@
 return {
   'mikew/nvim-drawer',
-  enabled = true,
+  enabled = false,
   opts = {},
   config = function(_, opts)
     local drawer = require('nvim-drawer')
@@ -28,7 +28,7 @@ return {
       on_vim_enter = function(event)
         --- Open the drawer on startup.
         event.instance.open({
-          focus = true,
+          focus = false,
         })
 
         --- Example mapping to toggle.

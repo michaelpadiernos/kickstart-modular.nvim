@@ -8,20 +8,21 @@ return {
         'nvim-tree/nvim-web-devicons',
         'b0o/nvim-tree-preview.lua',
         '3rd/image.nvim',
+        'echasnovski/mini.icons',
     },
-    -- cmd = 'NvimTreeToggle',
-    -- keys = {
-    --     { '\\', ':NvimTreeToggle<CR>', desc = 'Toggle NvimTree', silent = true },
-    -- },
-    -- opts = {
-    --     filesystem = {
-    --         window = {
-    --             mappings = {
-    --                 ['\\'] = 'NvimTreeToggle',
-    --             },
-    --         },
-    --     },
-    -- },
+    cmd = 'NvimTreeToggle',
+    keys = {
+        { '\\', ':NvimTreeToggle<CR>', desc = 'Toggle NvimTree', silent = true },
+    },
+    opts = {
+        filesystem = {
+            window = {
+                mappings = {
+                    ['\\'] = 'NvimTreeToggle',
+                },
+            },
+        },
+    },
     config = function()
 
         local swap_then_open_tab = function()

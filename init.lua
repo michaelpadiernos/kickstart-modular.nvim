@@ -1,27 +1,52 @@
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+require('bootstrap')
 
--- Set <space> as the leader key
--- See `:help mapleader`
---  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+require("mini.deps").setup({ path = { package = path_package } })
 
--- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
 
--- [[ Setting options ]]
-require 'options'
+now(function()
+    require('options')
+end)
 
--- [[ Basic Keymaps ]]
-require 'keymaps'
+add('echasnovski/mini.ai')
+add('echasnovski/mini.align')
+add('echasnovski/mini.animate')
+add('echasnovski/mini.base16')
+add('echasnovski/mini.basics')
+add('echasnovski/mini.bracketed')
+add('echasnovski/mini.bufremove')
+add('echasnovski/mini.clue')
+add('echasnovski/mini.colors')
+add('echasnovski/mini.comment')
+add('echasnovski/mini.completion')
+add('echasnovski/mini.cursorword')
+add('echasnovski/mini.diff')
+add('echasnovski/mini.doc')
+add('echasnovski/mini.extra')
+add('echasnovski/mini.files')
+add('echasnovski/mini.fuzzy')
+add('echasnovski/mini-git')
+add('echasnovski/mini.hipatterns')
+add('echasnovski/mini.hues')
+add('echasnovski/mini.icons')
+add('echasnovski/mini.indentscope')
+add('echasnovski/mini.jump')
+add('echasnovski/mini.jump2d')
+add('echasnovski/mini.map')
+add('echasnovski/mini.misc')
+add('echasnovski/mini.move')
+add('echasnovski/mini.notify')
+add('echasnovski/mini.operators')
+add('echasnovski/mini.pairs')
+add('echasnovski/mini.pick')
+add('echasnovski/mini.sessions')
+add('echasnovski/mini.splitjoin')
+add('echasnovski/mini.starter')
+add('echasnovski/mini.statusline')
+add('echasnovski/mini.surround')
+add('echasnovski/mini.tabline')
+add('echasnovski/mini.test')
+add('echasnovski/mini.trailspace')
+add('echasnovski/mini.visits')
 
--- [[ Install `lazy.nvim` plugin manager ]]
-require 'bootstrap'
-
--- [[ Configure and install plugins ]]
-require 'plugins'
-
--- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
+-- { import = 'plugins.contrib' }
